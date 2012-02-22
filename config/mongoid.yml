@@ -1,0 +1,19 @@
+development:
+  host: localhost
+  database: flpdeaf_development
+
+test:
+  host: localhost
+  database: flpdeaf_test
+
+# set these environment variables on your prod server
+production:
+  host: localhost
+  username: root
+  password: 1213122
+  database: flpdeaf
+  # slaves:
+  #   - host: slave1.local
+  #     port: 27018
+  #   - host: slave2.local
+  #     port: 27019

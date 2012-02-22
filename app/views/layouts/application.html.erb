@@ -7,8 +7,14 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+  <% if current_user %>
+    <div>
+      <span>Bem vindo <u><%= current_user.username %></u></span>
+      <%= link_to "logout", destroy_user_session_path, :method => :delete %>
+    </div>
+  <% end %>
 <%= yield %>
+
 
 </body>
 </html>
